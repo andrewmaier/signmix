@@ -1,0 +1,411 @@
+/* @override http://signmix.local/stylesheets/styles.css */
+
+/* @override http://signmix.local/stylesheets/styles.css */
+
+/* @group bootstrap */
+
+body{
+	font-family: Helvetica;
+	background: #aaa;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+main{
+	background: white;
+	max-width: 32em;
+	margin: 2em auto 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 2em;
+	position: relative;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* @group fonts */
+
+@font-face {
+	font-family: 'signmix';
+	src:url('fonts/signmix.eot?g0d47g');
+	src:url('fonts/signmix.eot?#iefixg0d47g') format('embedded-opentype'),
+		url('fonts/signmix.woff?g0d47g') format('woff'),
+		url('fonts/signmix.ttf?g0d47g') format('truetype'),
+		url('fonts/signmix.svg?g0d47g#signmix') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'signmix';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+	content: "\e600";
+}
+
+/* @end */
+
+
+
+/* @end */
+
+fieldset{
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin: 0 0 1em;
+	position: relative;
+	padding: 1.5em 0 1em;
+}
+
+fieldset legend{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: -0.15rem;
+	color: #888;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+/* @group signmix-new */
+
+.signmix-sign-new form header{
+	display: none;
+}
+
+.signmix-sign-new nav{
+	display: none;
+}
+
+.signmix-sign-new nav,
+.signmix-sign-new form footer{
+	border-bottom: 1px solid #eee;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 3em;
+	padding: 0 0.5em;
+}
+
+.signmix-sign-new nav a,
+.signmix-sign-new form footer button{
+	color: #555;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em;
+	vertical-align: middle;
+	background: #eee;
+	margin-top: 0.5em;
+	-moz-border-radius: 0.33em;
+border-radius: 0.33em;
+border: none;
+font-size: inherit;
+}
+
+.signmix-sign-new nav a{ 
+	font-family: 'signmix';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: lowercase;
+	line-height: 1;
+}
+
+
+.signmix-sign-new nav a:hover,
+.signmix-sign-new form footer button:hover{
+	background: #e3e3e3;
+	color: #333;
+}
+
+/* @group shapes */
+
+#new-shape{
+	float: left;
+	width: 20%;
+}
+#new-shape .field,
+#new-color .field,
+#new-icon .field{
+	float: left;
+	width: 20%;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
+
+#new-shape .field{
+	width: 100%
+}
+
+#new-shape .field{ text-indent: -9999em; }
+
+#new-shape .field label,
+form .field.field-text{
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+#new-shape .field.field-triangle label,
+form.shape-triangle .field.field-text{ background-image: url(../images/svg/triangle.svg); }
+
+#new-shape .field.field-diamond label,
+form.shape-diamond .field.field-text{ background-image: url(../images/svg/diamond.svg); }
+
+#new-shape .field.field-red-rectangle label,
+form.shape-red-rectangle .field.field-text{ background-image: url(../images/svg/red_rectangle.svg); }
+
+#new-shape .field.field-green-rectangle label,
+form.shape-green-rectangle .field.field-text{ background-image: url(../images/svg/green_rectangle.svg); }
+
+#new-shape .field.field-octagon label,
+form.shape-octagon .field.field-text{ background-image: url(../images/svg/stop.svg); }
+
+.signmix-sign-new input[type=radio]{
+	position: absolute;
+	left: -9999em;
+}
+
+#new-shape .field-active label,
+#new-color .field-active label,
+#new-icon .field-active label{
+	box-shadow: 0 0 0 2px #0bf;
+
+}
+
+
+#new-shape label,
+#new-color label,
+#new-icon label{
+	-moz-border-radius: 0.33em;
+	border-radius: 0.33em;	
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
+	display: block;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	font-size: 0.8em;
+	color: #888;
+}
+
+
+
+/* @end */
+
+#new-color label{
+	color: #333;
+}
+
+#new-color .field-color-red label{ background: red; }
+#new-color .field-color-yellow label{ background: yellow; }
+#new-color .field-color-green label{ background: green; color: white; }
+#new-color .field-color-black label{ background: #333; color: white;}
+#new-color .field-color-white label{ background: #eee; }
+
+/* @group icons */
+
+#new-icon{ display: none; }
+
+#new-icon .field label{ text-indent: -9999em; }
+
+#new-icon .field-icon-puppy label{ 
+	background: url(../images/icons/animals/puppy.svg) center center no-repeat; 
+}
+
+#new-icon .field-icon-rabbit label{ 
+	background: url(../images/icons/animals/rabbit.svg) center center no-repeat; 
+}
+
+#new-icon .field-icon-armadillo label{ 
+	background: url(../images/icons/animals/armadillo.svg) center center no-repeat; 
+}
+
+
+#new-icon .field-icon-giraffe label{ 
+	background: url(../images/icons/animals/giraffe.svg) center center no-repeat; 
+}
+
+
+
+/* @end */
+
+
+.field.field-text{
+	float: left;
+	width: 75%;
+	height: 20em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 12%;
+
+}
+
+.field-text label{
+	position: absolute;
+	left: -9999rem;
+	color: #888;
+	margin-bottom: 0.5rem;	
+}
+
+.field-text input{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	font-size: 3em;
+	line-height: 1;
+	margin-bottom: -0.15em;
+	font-family: "franklin-gothic-urw-comp";
+	font-weight: 700;
+	background: none;
+	text-align: center;
+	color: #333;
+	padding: 0;
+	outline: none;
+}
+
+.shape-diamond .field-text input::-webkit-input-placeholder{
+	color: #eba34e;
+}
+
+.shape-diamond .field-text input.field-text-line-1,
+.shape-diamond .field-text input.field-text-line-4{
+	padding-left: 33%;
+	padding-right: 33%;
+}
+
+.shape-diamond .field-text input.field-text-line-2,
+.shape-diamond .field-text input.field-text-line-3{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.shape-green-rectangle .field-text input::-webkit-input-placeholder,
+.shape-red-rectangle .field-text input::-webkit-input-placeholder{
+	color: #d3d3d3;
+}
+
+.shape-green-rectangle .field-text input,
+.shape-red-rectangle .field-text input{
+	padding: 0 5rem;
+}
+
+
+
+.shape-octagon .field-text input::-webkit-input-placeholder{
+	color: #922b47;
+}
+.shape-octagon .field-text input{
+	color: white;
+}
+
+.shape-octagon .field-text input.field-text-line-1,
+.shape-octagon .field-text input.field-text-line-4{
+	padding: 0 20%;
+}
+.shape-octagon .field-text input.field-text-line-2,
+.shape-octagon .field-text input.field-text-line-3{
+	padding: 0 10%;
+}
+
+
+
+.shape-triangle .field-text input:nth-child(1){
+	padding-left: 40%;
+	padding-right: 40%;
+}
+
+.signmix-sign-new form footer{
+	border-bottom: none;
+	border-top: 1px solid #ccc;
+	bottom: 0;
+	top: auto;
+}
+
+.signmix-sign-new form footer button.download::before{
+	font-family: 'signmix';
+	content: "download";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: lowercase;
+	line-height: 1;
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+}
+
+.signmix-sign-new form footer button.share::before{
+	content: "share";
+}
+
+
+
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
