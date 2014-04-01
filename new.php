@@ -31,7 +31,7 @@
                 <label for="shape-red-rectangle">Red Rectangle</label>
                 <input id="shape-red-rectangle" type="radio" name="shape"></input>
               </div>
-              <div class="field field-octagon">
+              <div class="field field-octagon field-active">
                 <label for="shape-octagon">Octagon</label>
                 <input id="shape-octagon" type="radio" name="shape"></input>
               </div>

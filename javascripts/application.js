@@ -9,8 +9,13 @@ $(document).ready(function(){
 
   $('fieldset#new-shape input[type="radio"]').click(function(){
     shapeName = $(this).attr('id');
+    if (shapeName == "shape-octagon") {
+    };
     $('form')
       .attr('class', '')
       .addClass(shapeName);
   });
+
+  $('#shape-octagon').click();
+
 });
